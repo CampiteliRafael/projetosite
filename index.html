@@ -1,58 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learn localStorage by Building a Todo App</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
 </head>
 
 <body>
-  <main>
-    <h1>Todo App</h1>
-    <div class="todo-app">
-      <button id="open-task-form-btn" class="btn large-btn">
-        Add New Task
-      </button>
-      <form class="task-form hidden" id="task-form">
-        <div class="task-form-header">
-          <button id="close-task-form-btn" class="close-task-form-btn" type="button" aria-label="close">
-            <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#F44336" d="M21.5 4.5H26.501V43.5H21.5z" transform="rotate(45.001 24 24)" /><path fill="#F44336" d="M21.5 4.5H26.5V43.501H21.5z" transform="rotate(135.008 24 24)" /></svg>
-          </button>
+    <header id="cabecalho">
+        <h1>Se Torne Um Programador</h1>
+    </header>
+    <nav id="navbar">
+        <a href="#p1">Lógica de Programação</a>
+        <a href="#p2">Linguagens de Programação</a>
+        <a href="#p3">Front-End</a>
+        <a href="#p4">Back-End</a>
+        <a href="#p5">Full Stack</a>
+    </nav>
+    <main id="corpo">
+        <div id="main-content">
+            <h2>A Indústria Tecnológica E Suas Oportunidades.</h2>
+            <p>A indústria tecnológica está repleta de oportunidades devido à sua rápida expansão e influência crescente
+                em
+                praticamente todos os setores. Com a digitalização dos negócios, a demanda por profissionais de
+                tecnologia
+                continua a crescer, criando vagas em áreas como desenvolvimento de software, ciência de dados,
+                inteligência
+                artificial, cibersegurança e muitos outros. Além disso, a inovação constante impulsiona a criação de
+                startups e novas soluções tecnológicas, oferecendo chances para empreendedores e profissionais que
+                buscam
+                fazer parte de projetos disruptivos. Este ambiente dinâmico e em constante evolução não apenas oferece
+                uma vasta gama de carreiras, mas também possibilita o desenvolvimento contínuo de habilidades e a
+                oportunidade de trabalhar em problemas complexos que impactam o mundo de maneira significativa.</p>
+            <p>
+                A indústria tecnológica oferece uma infinidade de oportunidades para aqueles que estão dispostos a
+                aprender e se adaptar. Com a evolução contínua da tecnologia, as demandas por profissionais qualificados
+                só tendem a crescer. Investir em educação e desenvolvimento de habilidades técnicas é essencial para
+                aproveitar ao máximo as oportunidades disponíveis e construir uma carreira de sucesso nesse setor
+                vibrante e inovador.
+            </p>
         </div>
-        <div class="task-form-body">
-          <label class="task-form-label" for="title-input">Title</label>
-          <input required type="text" class="form-control" id="title-input" value="" />
-          <label class="task-form-label" for="date-input">Date</label>
-          <input type="date" class="form-control" id="date-input" value="" />
-          <label class="task-form-label" for="description-input">Description</label>
-          <textarea class="form-control" id="description-input" cols="30" rows="5"></textarea>
+        <aside id="complemento">
+            <img
+                src="imagens/closeup-programmer-man-hand-typing-website-script-computer-working-remote-from-home-african-american-hacker-worker-programming-binary-code-using-network-security-system-concept-coding.jpg">
+            <p>Desenvolvido Por <a href="www.freepik.com">Freepik</a></p>
+        </aside>
+    </main>
+    <section id="conteudo">
+        <div class="div1" id="p1">
+            <h3>Lógica de Programação</h3>
+            <button class="button" data-target="#b1t">Clique</button>
         </div>
-        <div class="task-form-footer">
-          <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
-            Add Task
-          </button>
+        <div class="text">
+            <p id="b1t" class="hidden">A lógica de programação é o processo de pensar e estruturar um problema
+                de forma lógica e sequencial, de modo que um computador possa executar uma série de instruções para
+                resolver esse problema. Aqui está um resumo sobre lógica de programação:<br>
+                <br>
+                <strong>Definição:</strong> Lógica de programação é a capacidade de formular pensamentos de maneira
+                estruturada e sequencial, essencial para a criação de algoritmos e programas de computador.<br>
+                <br>
+                <strong>Importância:</strong> É fundamental para programadores entenderem e aplicarem princípios
+                lógicos para resolver problemas complexos de maneira eficiente e precisa.<br>
+                <br>
+                <strong>Elementos Chave: </strong><br>
+                <br>
+                <strong>Sequência:</strong> A ordem lógica das instruções que devem ser executadas.<br>
+                <br>
+                <strong>Seleção:</strong> Decisões baseadas em condições para executar diferentes ações.<br>
+                <br>
+                <strong>Repetição:</strong> Iterações para realizar a mesma ação várias vezes, economizando tempo e
+                esforço.<br>
+                <br>
+                <strong>Estruturas de Controle:</strong><br>
+                <br>
+                <strong>Estruturas Sequenciais:</strong> Execução passo a passo das instruções.<br>
+                <br>
+                <strong>Estruturas de Decisão:</strong> (Seleção): if, else, switch para tomar decisões com base em
+                condições.<br>
+                <br>
+                <strong>Estruturas de Repetição (Iteração):</strong> for, while, do-while para repetir um bloco de
+                código enquanto uma condição é verdadeira.<br>
+                <br>
+                <strong>Algoritmos:</strong> São sequências de passos lógicos bem definidos que resolvem um problema
+                específico. São a base para a implementação prática da lógica de programação.<br>
+                <br>
+                <strong>Aplicações:</strong> A lógica de programação é utilizada em diversas áreas, como
+                desenvolvimento de software, automação, inteligência artificial, ciência de dados, entre outras,
+                onde a capacidade de pensar de forma lógica é crucial para criar soluções eficazes e eficientes.<br>
+                <br>
+
+                Em resumo, a lógica de programação é a habilidade fundamental para programadores, permitindo-lhes
+                criar algoritmos claros e eficientes que resolvem problemas computacionais complexos de maneira
+                estruturada e sistemática. Dominar essa habilidade é essencial para o sucesso na área de
+                desenvolvimento de software e outras disciplinas relacionadas à computação.
+            </p>
         </div>
-      </form>
-      <dialog id="confirm-close-dialog">
-        <form method="dialog">
-          <p class="discard-message-text">Discard unsaved changes?</p>
-          <div class="confirm-close-dialog-btn-container">
-            <button id="cancel-btn" class="btn">
-              Cancel
-            </button>
-            <button id="discard-btn" class="btn">
-              Discard
-            </button>
-          </div>
-        </form>
-      </dialog>
-      <div id="tasks-container"></div>
-    </div>
-  </main>
-  <script src="script.js"></script>
+        <div class="div1" id="p2">
+            <h3>Linguagens de Programação</h3>
+            <button class="button" data-target="#b2t">Clique</button>
+        </div>
+        <div class="text">
+            <p class="hidden" id="b2t">Uma linguagem de programação é um conjunto de regras e símbolos
+                utilizados para escrever programas que instruem um computador a executar tarefas específicas. Aqui
+                está um resumo sobre linguagem de programação:<br>
+                <br>
+                <strong>Definição:</strong> Uma linguagem de programação é um meio formal de comunicação entre um
+                humano (programador) e um computador. Ela define um conjunto de regras sintáticas e semânticas que
+                permitem a criação de programas para automação de tarefas.<br>
+                <br>
+                <strong>Elementos Chave:</strong><br>
+                <br>
+                <strong>Sintaxe:</strong> Conjunto de regras que definem como os programas devem ser escritos
+                (estrutura das instruções, uso de palavras-chave, operadores, etc.).<br>
+                <br>
+                <strong>Semântica:</strong> Significado das instruções escritas na linguagem, ou seja, como essas
+                instruções são interpretadas e executadas pelo computador.<br>
+                <br>
+                <strong>Tipos de Dados:</strong> Formas de representar e manipular informações, como números,
+                textos, booleanos, entre outros.<br>
+                <br>
+                <strong>Instruções:</strong> Comandos específicos que realizam ações dentro do programa, como
+                atribuições, operações matemáticas, controle de fluxo (decisões e repetições), entre outros.<br>
+                <br>
+                <strong>Classificação:</strong><br>
+                <br>
+                <strong>Linguagens de Alto Nível:</strong> Mais próximas da linguagem humana, facilitando o
+                desenvolvimento e a manutenção de programas complexos. Exemplos incluem Python, Java, C++,
+                JavaScript.<br>
+                <br>
+                <strong>Linguagens de Baixo Nível:</strong> Mais próximas da linguagem de máquina, exigem maior
+                conhecimento técnico e são menos portáteis entre diferentes plataformas. Exemplos incluem Assembly,
+                linguagem de máquina.<br>
+                <br>
+                <strong>Paradigmas de Programação:</strong> Formas de organizar e estruturar o código. Exemplos
+                incluem:<br>
+                <br>
+
+                <strong>Procedural:</strong> Estrutura baseada em procedimentos ou funções.<br>
+                <br>
+                <strong>Orientado a Objetos:</strong> Organização em torno de objetos que possuem dados e
+                métodos.<br>
+                <br>
+                <strong>Funcional:</strong> Ênfase em funções puras e imutabilidade dos dados.<br>
+                <br>
+                <strong>Lógico:</strong> Baseado em regras de inferência lógica.<br>
+                <br>
+                <strong>Event-Driven:</strong> Reage a eventos que ocorrem no sistema.<br>
+                <br>
+                <strong>Aplicações:</strong> As linguagens de programação são usadas em uma ampla gama de
+                aplicações, desde desenvolvimento de software, sistemas embarcados, inteligência artificial, até
+                automação industrial e científica. Cada linguagem tem suas características, vantagens e
+                desvantagens, tornando-as mais adequadas para diferentes tipos de projetos e ambientes de
+                desenvolvimento.<br>
+                <br>
+
+                Em resumo, uma linguagem de programação é um conjunto formal de regras e símbolos que permitem a
+                criação de programas de computador para realizar tarefas específicas. Elas são essenciais para a
+                comunicação entre humanos e computadores, possibilitando o desenvolvimento de software que
+                impulsiona a tecnologia moderna em diversas áreas da sociedade.
+            </p>
+        </div>
+        <div class="div1" id="p3">
+            <h3>Front-End</h3>
+            <button class="button" data-target="#b3t">Clique</button>
+        </div>
+        <div class="text">
+            <p class="hidden" id="b3t">O Front-End refere-se à parte de um site ou aplicativo web que os
+                usuários interagem diretamente. É
+                responsável por apresentar informações de forma visualmente atraente e permitir interações
+                intuitivas. As tecnologias principais utilizadas no Front-End são HTML, que define a estrutura do
+                conteúdo, CSS, que estiliza e formata a página, e JavaScript, que adiciona interatividade e
+                dinamismo.<br>
+                <br>
+
+                No desenvolvimento Front-End, são fundamentais o design responsivo para garantir que o site seja
+                acessível em diferentes dispositivos, a criação de elementos interativos como botões e formulários,
+                e a otimização do desempenho para melhorar a velocidade e eficiência do site.<br>
+                <br>
+
+                O Front-End desempenha um papel crucial na experiência do usuário (UX), influenciando diretamente
+                como os visitantes interagem e percebem um site ou aplicativo. É uma área dinâmica e essencial no
+                desenvolvimento web moderno, focada em proporcionar uma experiência de usuário agradável e
+                eficiente.<br>
+                <br>
+            </p>
+        </div>
+        <div class="div1" id="p4">
+            <h3>Back-End</h3>
+            <button class="button" data-target="#b4t">Clique</button>
+        </div>
+        <div class="text">
+            <p class="hidden" id="b4t">O Back-End é a parte de um site ou aplicativo web que funciona nos
+                bastidores, gerenciando a lógica,
+                as operações e a integração de sistemas. Ele lida com o armazenamento de dados, processamento de
+                solicitações do usuário, autenticação, autorização e muito mais. Diferente do Front-End, que é a
+                interface visível ao usuário, o Back-End se concentra na funcionalidade e eficiência do sistema.
+
+                As tecnologias principais utilizadas no Back-End incluem linguagens de programação como Python,
+                Java, Ruby, PHP, Node.js, entre outras. Além disso, bancos de dados como MySQL, PostgreSQL, MongoDB
+                e outros são essenciais para armazenar e gerenciar dados. Frameworks e bibliotecas como Django,
+                Spring, Ruby on Rails e Express.js ajudam a simplificar e acelerar o desenvolvimento Back-End.<br>
+                <br>
+
+                No desenvolvimento Back-End, é fundamental garantir que o servidor, a aplicação e o banco de dados
+                se comuniquem de forma eficiente e segura. Isso inclui a implementação de APIs (Application
+                Programming Interfaces) que permitem a comunicação entre o Front-End e o Back-End, bem como outras
+                aplicações e serviços.<br>
+                <br>
+
+                A segurança é uma prioridade no Back-End, pois é responsável por proteger dados sensíveis e garantir
+                que apenas usuários autorizados tenham acesso a determinadas funcionalidades. A escalabilidade
+                também é um aspecto importante, permitindo que o sistema lide com um aumento no número de usuários
+                ou na quantidade de dados sem comprometer o desempenho.<br>
+                <br>
+
+                O Back-End desempenha um papel crucial no desenvolvimento web, garantindo que tudo funcione
+                corretamente e que as necessidades dos usuários sejam atendidas de forma eficiente e segura.<br>
+                <br>
+            </p>
+        </div>
+        <div class="div1" id="p5">
+            <h3>Full Stack</h3>
+            <button class="button" data-target="#b5t">Clique</button>
+        </div>
+        <div class="text">
+            <p class="hidden" id="b5t">O desenvolvimento Full Stack refere-se à capacidade de trabalhar tanto no
+                Front-End quanto no
+                Back-End de uma aplicação web. Um desenvolvedor Full Stack possui habilidades para lidar com a
+                interface do usuário, a lógica do servidor, a interação com bancos de dados e a integração entre
+                diferentes sistemas. Isso torna os desenvolvedores Full Stack extremamente versáteis e valiosos no
+                desenvolvimento de software.<br>
+                <br>
+                <strong>Tecnologias Utilizadas</strong><br>
+                <br>
+                Os desenvolvedores Full Stack precisam ser proficientes em uma ampla gama de tecnologias:<br>
+                <br>
+                <strong>Front-End:</strong> HTML, CSS, JavaScript e frameworks/libraries como React, Angular ou
+                Vue.js.<br>
+                <br>
+                <strong>Back-End:</strong> Linguagens de programação como Node.js, Python, Java, Ruby, PHP e
+                frameworks como
+                Express.js, Django, Spring, Ruby on Rails.<br>
+                <br>
+                <strong>Bancos de Dados:</strong> SQL (MySQL, PostgreSQL) e NoSQL (MongoDB).<br>
+                <br>
+                <strong>Controle de Versão:</strong> Git e plataformas como GitHub ou GitLab.<br>
+                <br>
+                <strong>Ferramentas de Desenvolvimento:</strong> IDEs, ferramentas de build (Webpack, Gulp), e
+                sistemas de
+                gerenciamento de pacotes (npm, Yarn).<br>
+                <br>
+                <strong>Desenvolvimento</strong><br>
+                <br>
+                Os desenvolvedores Full Stack são responsáveis por:<br>
+                <br>
+                <strong>Front-End:</strong> Criar interfaces de usuário responsivas e interativas, garantindo uma
+                ótima experiência
+                do usuário (UX).<br>
+                <br>
+                <strong>Back-End:</strong> Desenvolver a lógica do servidor, APIs, autenticação, e segurança de
+                dados.<br>
+                <br>
+                <strong>Integração:</strong> Garantir que o Front-End e o Back-End funcionem perfeitamente juntos,
+                lidando com
+                comunicação entre servidor e cliente.<br>
+                <br>
+                <strong>DevOps:</strong> Configurar e gerenciar servidores, deployment, e monitoramento de
+                aplicações.<br>
+                <br>
+                <strong>Importância</strong><br>
+                <br>
+                Os desenvolvedores Full Stack são valiosos porque podem compreender e trabalhar em todas as partes
+                de um projeto, desde o design da interface até a arquitetura do banco de dados. Essa versatilidade
+                permite uma melhor comunicação entre equipes e uma visão holística do desenvolvimento de software,
+                facilitando a resolução de problemas complexos e a entrega de produtos de alta qualidade.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>Rafael Campiteli Pereira ₢: Projeto Pessoal De Treino!</p>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
